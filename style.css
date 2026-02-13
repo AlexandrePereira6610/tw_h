@@ -206,3 +206,60 @@ body {
 .logos img:hover {
   transform: scale(1.05);
 }
+
+
+/*  OPORTUNIDADES */
+
+
+.secao-oportunidades {
+  background-color: #e9e9e9;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+
+  border: 1.5px solid #6e6e6e;
+  border-radius: 35px;
+
+  font-family: "Georgia", serif;
+  position: relative;
+  text-align: center;
+}
+
+.secao-oportunidades h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.descricao-oportunidades {
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  line-height: 1.7;
+}
+
+.lista-oportunidades {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 22px;
+}
+
+.lista-oportunidades a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.lista-oportunidades a:hover {
+  color: #061D60;
+  transform: translateX(5px);
+}
+
+/* + opcional no canto */
+.opcional {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 18px;
+}

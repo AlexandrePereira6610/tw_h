@@ -1,12 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
+body {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #061D60;
+}
 /* HEADER */
-.top-bar {
+.topo-h {
   height: 70px;
   padding: 0 40px;
   background-color: #0b2a66;
@@ -21,8 +22,8 @@
   font-size: 24px;
 }
 
-/* HERO */
-.hero {
+/* img */
+.img {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -30,7 +31,7 @@
 }
 
 /* IMAGEM */
-.hero-bg {
+.img-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -40,7 +41,7 @@
 }
 
 /* LOGO */
-.hero-logo {
+.img-logo {
   position: absolute;
   top: 70px;
   left: 90px;
@@ -48,7 +49,7 @@
   z-index: 2;
 }
 
-/* MISSÃO */
+/* MISSAO */
 .missao {
   background-color: #e9e9e9;
   padding: 60px 40px;
@@ -58,7 +59,7 @@
   border: 1.5px solid #6e6e6e;
   border-radius: 10px;
 
-  /* Espaçamento externo */
+  /* Espaçamento exterior */
   margin: 40px auto;
   max-width: 1200px;
 }
@@ -107,4 +108,101 @@
 .card p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+/* SECCO INVESTIGACAO */
+
+.secao-investi {
+  background-color: #e9e9e9;
+  padding: 60px 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+
+  /* REBORDO FORA */
+  border: 1.5px solid #6e6e6e;
+  border-radius: 12px;
+
+  font-family: "Georgia", serif;
+}
+
+.secao-investi .container {
+  text-align: center;
+}
+
+.secao-investi h2 {
+  font-size: 34px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.cards2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cards2 .card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #dcdcdc;
+  padding: 25px 20px;
+
+  border-radius: 25px;
+  border: 1px solid #555;
+}
+
+.cards2 .card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.cards2 .card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* PARCEIROS */
+
+.secao-parceiros {
+  background-color: #e9e9e9;
+  padding: 60px 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+
+  border: 1.5px solid #6e6e6e;
+  border-radius: 20px;
+
+  font-family: "Georgia", serif;
+  text-align: center;
+}
+
+.secao-parceiros h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.descricao-parceiros {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logos img:hover {
+  transform: scale(1.05);
 }

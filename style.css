@@ -1,343 +1,115 @@
-
 body {
-     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #061D60;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #061D60;
+  line-height: 1.6;
 }
+
 /* HEADER */
 .topo-h {
-  height: 70px;
-  padding: 0 40px;
   background-color: #0b2a66;
-  color: #ffffff;
-
+  color: white;
+  padding: 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-.menu-icon {
-  font-size: 24px;
-}
-
-/* img */
+/* IMAGEM */
 .img {
-  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 610px;
   overflow: hidden;
 }
 
-/* IMAGEM */
-.img-bg {
+.img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: cover; 
   display: block;
-  z-index: 1;
 }
 
 /* LOGO */
 .img-logo {
   position: absolute;
-  top: 70px;
-  left: 90px;
-  width: 360px;
-  z-index: 2;
+  top: -30px; 
+  left: 10px;
+  width: 200px;
 }
 
-/* MISSAO */
-.missao {
-  background-color: #e9e9e9;
-  padding: 60px 40px;
-  font-family: "Georgia", serif;
-
-  /* Rebordo exterior */
-  border: 1.5px solid #6e6e6e;
-  border-radius: 10px;
-
-  /* Espaçamento exterior */
-  margin: 40px auto;
-  max-width: 1200px;
-}
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
+/* SECCAO  */
+.missao,
+.secao-investi,
+.secao-parceiros,
+.secao-oportunidades,
+.secao-contactos {
   text-align: center;
-}
-
-.missao h1 {
-  font-size: 42px;
-  margin-bottom: 25px;
-  font-weight: 500;
-}
-
-.intro {
-  max-width: 900px;
-  margin: 0 auto 20px auto;
+  background-color: #e9e9e9;
+  width: 80%;              
+  margin-left: 10%;      
+  margin-top: 25px;
+  padding: 50px 40px;
+  border-radius: 15px;
   font-size: 18px;
-  line-height: 1.7;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 50px;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1;
-  min-width: 280px;
-  background-color: #dcdcdc;
-  padding: 30px 25px;
-  border-radius: 25px;
-  border: 1px solid #555;
-}
-
-.card h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  font-weight: 500;
-}
-
-.card p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* INVESTIGACAO */
-
-.secao-investi {
-  background-color: #e9e9e9;
-  padding: 60px 40px;
-  margin: 40px auto;
-  max-width: 1200px;
-
-  /* REBORDO FORA */
-  border: 1.5px solid #6e6e6e;
-  border-radius: 12px;
-
-  font-family: "Georgia", serif;
-}
-
-.secao-investi .container {
+/* TITULOS */
+h1, h2 {
+  font-size: 42px;
   text-align: center;
+  margin-top: 0;
 }
 
-.secao-investi h2 {
-  font-size: 34px;
-  margin-bottom: 50px;
-  font-weight: 500;
-}
-
-.cards2 {
+/* CARDS */
+.cards,
+.cards2,
+.contactos-tt {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.cards2 .card {
-  flex: 1;
-  min-width: 280px;
+.card,
+.info-contacto,
+.form-contacto {
   background-color: #dcdcdc;
-  padding: 25px 20px;
-
-  border-radius: 25px;
-  border: 1px solid #555;
-}
-
-.cards2 .card h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-weight: 500;
-}
-
-.cards2 .card p {
-  font-size: 16px;
-  line-height: 1.6;
+  padding: 25px;
+  border-radius: 15px;
+  flex: 1;
 }
 
 /* PARCEIROS */
-
-.secao-parceiros {
-  background-color: #e9e9e9;
-  padding: 60px 40px;
-  margin: 40px auto;
-  max-width: 1200px;
-
-  border: 1.5px solid #6e6e6e;
-  border-radius: 20px;
-
-  font-family: "Georgia", serif;
-  text-align: center;
-}
-
-.secao-parceiros h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-.descricao-parceiros {
-  font-size: 18px;
-  margin-bottom: 50px;
-}
-
 .logos {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 40px;
+  gap: 50px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .logos img {
-  max-height: 120px;
-  width: auto;
-  object-fit: contain;
+  height: 100px;
 }
-
-.logos img:hover {
-  transform: scale(1.05);
-}
-
 
 /*  OPORTUNIDADES */
-
-
-.secao-oportunidades {
-  background-color: #e9e9e9;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 1200px;
-
-  border: 1.5px solid #6e6e6e;
-  border-radius: 35px;
-
-  font-family: "Georgia", serif;
-  position: relative;
-  text-align: center;
-}
-
-.secao-oportunidades h2 {
-  font-size: 42px;
-  margin-bottom: 25px;
-  font-weight: 500;
-}
-
-.descricao-oportunidades {
-  font-size: 18px;
-  max-width: 900px;
-  margin: 0 auto 50px auto;
-  line-height: 1.7;
-}
-
-.lista-oportunidades {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-size: 22px;
-}
-
 .lista-oportunidades a {
+  display: block;
+  margin: 14px ;
   text-decoration: none;
-  color: #000;
-  transition: all 0.3s ease;
-}
-
-.lista-oportunidades a:hover {
-  color: #061D60;
-  transform: translateX(5px);
-}
-
-
-/* CONTACTOS */
-
-.secao-contactos {
-  background-color: #d1caca;
-  padding: 60px 40px;
-  margin: 40px auto;
-  max-width: 1200px;
-  color: white;
-  border: 1.5px solid #6e6e6e;
-  border-radius: 35px;
-
-  font-family: "Georgia", serif;
-  text-align: center;
-}
-
-.secao-contactos h2 {
-  font-size: 42px;
-  margin-bottom: 40px;
-  font-weight: 500;
-}
-
-.contactos-tt {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-/*  INFORMACAO*/
-.info-contacto {
-  flex: 1;
-  min-width: 300px;
-  background-color: #061D60;
-  padding: 40px;
-  border-radius: 25px;
-  border: 1px solid #555;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.8;
+  color: black;
 }
 
 /* FORMULARIO */
-.form-contacto {
-  flex: 1;
-  min-width: 300px;
-  background-color: #061D60;
-  padding: 40px;
-  border-radius: 25px;
-  border: 1px solid #555;
-  text-align: center;
-}
-
-.form-intro {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.form-contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 .form-contacto input,
 .form-contacto textarea {
-  padding: 12px;
-  border: none;
-  background-color: #cfcfcf;
-  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .form-contacto button {
-  padding: 12px;
-  background-color: #1a6d0b;
+  padding: 6px;
+  background-color: green;
   color: white;
   border: none;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
-.form-contacto button:hover {
-  background-color: #145507;
-}
+

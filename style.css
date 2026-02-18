@@ -71,7 +71,7 @@ html {
 
 .hero-texto {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -160,7 +160,8 @@ h1, h2 {
 }
 /* Para auemntar o tamanho da logo no meio do ecrã */
 .hero-texto .logo-header {
-  height: 250px;
+  height: 400px;
+
 }
 
 /*  responsivo para ecrâ pequeno */

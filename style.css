@@ -7,35 +7,81 @@ body {
 
 /* HEADER */
 .topo-h {
-  background-color: #0b2a66;
-  color: white;
-  padding: 20px;
+  padding: 16px 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-/* IMAGEM */
-.img {
-  width: 100%;
-  height: 610px;
-  overflow: hidden;
+/* lado esquerdo */
+.header-- {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.img img {
+.logo-header {
+  height: 60px;
+  transform: scale(1.3); 
+  transform-origin: left center;
+}
+
+/* menu  */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.menu  a:hover {
+  text-decoration: underline;
+}
+
+/* ícones  direita */
+.header-t {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+/* scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* imagem de fundo */
+.img {
+  position: relative;
+  width: 100%;
+  height: 700px;  
+  overflow: hidden;
+}
+.img-bg {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 }
 
-/* LOGO */
-.img-logo {
+.hero-texto {
   position: absolute;
-  top: -30px; 
-  left: 10px;
-  width: 200px;
-}
+  top: 40%;
+  left: 50%;
+ transform: translate(-50%, -50%);
 
+  color: white;
+  font-size: 48px;
+  text-align: center;
+
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
 /* SECCAO  */
 .missao,
 .secao-investi,
@@ -112,4 +158,13 @@ h1, h2 {
   border: none;
 }
 
+/*  responsivo para ecrâ pequeno */
+@media (max-width: 768px) {
+  .hero-texto {
+    font-size: 32px;
+  }
 
+  .logo-header {
+    height: 50px;
+  }
+}

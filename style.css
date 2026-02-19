@@ -158,13 +158,13 @@ h1, h2 {
   color: white;
   border: none;
 }
-/* Para auemntar o tamanho da logo no meio do ecrã */
+/* Para auemntar o tamanho logo no meio do ecrã */
 .hero-texto .logo-header {
   height: 400px;
 
 }
 
-/*  responsivo para ecrâ pequeno */
+/*  responsivo para ecra menores */
 @media (max-width: 768px) {
   .hero-texto {
     font-size: 32px;
